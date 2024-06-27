@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Container, Text, VStack, Input, Box, Link, useColorMode, Button } from "@chakra-ui/react";
-import { MoonIcon, SunIcon } from "react-icons/fa";
+import { FaMoon, FaSun } from "react-icons/fa";
 
 const Index = () => {
   const [stories, setStories] = useState([]);
@@ -43,7 +43,7 @@ const Index = () => {
     <Container centerContent maxW="container.md" py={8}>
       <VStack spacing={4} width="100%">
         <Button onClick={toggleColorMode} alignSelf="flex-end">
-          {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
+          {colorMode === "light" ? <FaMoon /> : <FaSun />}
         </Button>
         <Text fontSize="2xl" fontWeight="bold">Top 5 Hacker News Stories</Text>
         <Input
